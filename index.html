@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Employee Directory</h1>
+    <!-- <div class="header-actions"> -->
+        
+        <div class="search-wrapper">
+      <input type="text" placeholder="Search by name or email" class="search-input" />
+      </div>
+
+      <button class="filter-btn">Filter</button>
+    <!-- </div> -->
+  </header>
+
+  <main class="main-content">
+  <section class="employee-section">
+
+  <!-- Controls -->
+  <section class="controls">
+    <div class="sort-show">
+      <label>Sort:
+        <select id="sort">
+          <option value="">--Select--</option>
+          <option value="firstName">First Name</option>
+          <option value="department">Department</option>
+        </select>
+      </label>
+      <label>Show:
+        <select id="show-count">
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </label>
+    </div>
+<a href="form.html" class="add-btn">Add Employee</a>
+  </section>
+
+  <!-- Employee Cards -->
+  <section class="employee-list" id="employeeList">
+   
+  </section>
+
+  <div id="paginationControls" class="pagination-controls"></div>
+
+
+</section>
+
+  <!-- Filter Sidebar - hidden initially -->
+  <aside id="filterPanel" class="filter-panel hidden">
+    <div class="filter-header">
+    <h2>Filter Employees</h2>
+    <button class="close-btn" id="closeFilter">&times;</button>
+  </div>
+    <form id="filterForm">
+        <div class="filter-row">
+      <label for="filterFirstName">First Name:</label>
+      <input type="text" id="filterFirstName" name="firstName" />
+            </div>
+
+       <div class="filter-row">    
+      <label for="filterDepartment">Department:</label>
+      <input type="text" id="filterDepartment" name="department" />
+        </div> 
+      <div class="filter-row">
+      <label for="filterRole">Role:</label>
+      <input type="text" id="filterRole" name="role" />
+        </div>
+      <div class="filter-actions">
+        <button type="submit" class="apply-btn">Apply</button>
+        <button type="button" class="reset-btn">Reset</button>
+      </div>
+    </form>
+  </aside>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Employee Directory App. All rights reserved.
+  </footer>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

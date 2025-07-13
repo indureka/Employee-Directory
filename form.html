@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main class="form-container">
+    <form id="employeeForm" class="form-card">
+      <h2 id="formTitle">Add Employee</h2>
+
+      <div class="form-group">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" required />
+      </div>
+
+     <div class="form-row">
+  <div class="form-group half">
+    <label for="email">Email</label>
+    <input type="email" id="email" required />
+  </div>
+
+  <div class="form-group half">
+    <label for="department">Department</label>
+    <select id="department" required>
+      <option value=""></option>
+      <option value="HR">HR</option>
+      <option value="IT">IT</option>
+      <option value="Finance">Finance</option>
+      <option value="Marketing">Marketing</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="role">Role</label>
+  <select id="role" required>
+    <option value=""></option>
+    <option value="Manager">Manager</option>
+    <option value="Developer">Developer</option>
+    <option value="Analyst">Analyst</option>
+    <option value="Designer">Designer</option>
+  </select>
+</div>
+
+
+      <div class="form-actions">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <button type="submit" class="submit-btn">Add</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
