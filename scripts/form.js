@@ -77,6 +77,7 @@ form.addEventListener("submit", (e) => {
 
   localStorage.setItem("employees", JSON.stringify(employees));
   alert(editIndex !== null ? "Employee updated!" : "Employee added!");
+  isFormDirty = false;
   window.location.href = "index.html";
 });
 
