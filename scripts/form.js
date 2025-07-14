@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("employeeForm");
   const cancelBtn = document.querySelector(".cancel-btn");
